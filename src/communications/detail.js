@@ -26,7 +26,11 @@ export default function CommunicationDetail() {
   const [communication, setCommunication] = useState();
 
    useEffect(() => {
-    // TODO: fetch communication detail data
+       async function fetchData() {
+           // Call fetch as usual
+           const res = await fetch(
+               "https://localhost:3000/api/CommunicationsController"
+           );
   }, []);
 
   
